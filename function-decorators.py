@@ -22,14 +22,6 @@ def some_method(a, name='default'):
    print("a: {}".format(a))
 
 
-
-def doubled(func,*args, **kwargs):
-    def new_function(*args, **kwargs):
-        return 2 * func(*args,**kwargs)
-    return new_function
-
-@logged
-@doubled
 def add(a,b):
   return a + b
 
